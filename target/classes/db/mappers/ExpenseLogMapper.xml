@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="db.mappers.ExpenseLogMapper">
+
+    <insert id="insert" parameterClass="db.pojos.ExpenseLog">
+        insert into expense_log(store_id, category_id, money_source_id, expense_type_id, amount, date, comments)
+        values (#store_id#, #category_id#, #money_source_id#, #expense_type_id#, #amount#, #date#, #comments#)
+
+        <selectKey resultClass="int" keyProperty="id">
+            select last_insert_id() as id
+        </selectKey>
+    </insert>
+
+</sqlMap>
