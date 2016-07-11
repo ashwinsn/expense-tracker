@@ -39,6 +39,14 @@ public class ExpenseLogLoader {
 
     }
 
+    private int extractExpenseTypeId(String expenseLogAttribute) {
+        return 0;
+    }
+
+    private int extractCategoryId(String expenseLogAttribute) {
+        return 0;
+    }
+
     private int extractStoreId(String Store) {
         return -1;
     }

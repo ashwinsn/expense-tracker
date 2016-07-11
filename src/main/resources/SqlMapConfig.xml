@@ -25,4 +25,5 @@
 
     <sqlMap resource="db/mappers/ExpenseLogMapper.xml"/>
     <sqlMap resource="db/mappers/StoreCategoryMapper.xml"/>
+    <sqlMap resource="db/mappers/StoreMapper.xml"/>
 </sqlMapConfig>
